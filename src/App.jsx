@@ -1629,8 +1629,8 @@ export default function QuranTranslationLandingPage() {
 
                 <div className={`${unifiedGradientCard} p-4 sm:p-6 flex flex-col items-center text-center justify-center`}>
                   <div className="mb-5 flex flex-col items-center gap-3 text-lg font-bold text-white sm:text-xl">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[#d4af37]/30 bg-gradient-to-br from-[#7a0f0f]/30 via-[#111]/40 to-[#d4af37]/10 shadow-[0_0_18px_rgba(212,175,55,0.25)] backdrop-blur-md">
-                      <MessageCircle className="h-6 w-6" style={{ color: ACCENT }} />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_12px_rgba(212,175,55,0.15)]">
+                      <MessageCircle className="h-5 w-5" style={{ color: ACCENT }} />
                     </div>
                     <span>Details</span>
                   </div>
@@ -1669,8 +1669,8 @@ export default function QuranTranslationLandingPage() {
 
                 <div className={`${unifiedGradientCard} p-4 backdrop-blur-md sm:p-6 flex flex-col items-center text-center justify-center`}>
                   <div className="mb-5 flex flex-col items-center gap-3 text-lg font-bold text-white sm:text-xl">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[#d4af37]/30 bg-gradient-to-br from-[#7a0f0f]/30 via-[#111]/40 to-[#d4af37]/10 shadow-[0_0_18px_rgba(212,175,55,0.25)] backdrop-blur-md">
-                      <Link2 className="h-6 w-6" style={{ color: ACCENT }} />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_12px_rgba(212,175,55,0.15)]">
+                      <Link2 className="h-5 w-5" style={{ color: ACCENT }} />
                     </div>
                     <span>App-Links</span>
                   </div>
