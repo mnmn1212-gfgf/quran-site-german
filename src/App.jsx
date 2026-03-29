@@ -82,9 +82,21 @@ const stats = [
 ];
 
 const heroCards = [
-  { value: "114", label: "Vollständige Suren" },
-  { value: "30", label: "Teile des Korans" },
-  { value: "Exzellent", label: "Audiovisuelle Darstellung" },
+  {
+    value: "114",
+    mobileLabel: "Suren",
+    desktopLabel: "Vollständige Suren",
+  },
+  {
+    value: "30",
+    mobileLabel: "Teile",
+    desktopLabel: "Teile des Korans",
+  },
+  {
+    value: "Exzellent",
+    mobileLabel: "AV",
+    desktopLabel: "Audiovisuelle Darstellung",
+  },
 ];
 
 const heroBadges = [
@@ -1243,14 +1255,23 @@ export default function QuranTranslationLandingPage() {
                     <div className="mt-6 grid grid-cols-3 gap-2 text-center sm:mt-8 sm:gap-3">
                       {heroCards.map((item) => (
                         <div
-                          key={item.label}
-                          className="rounded-2xl border border-white/10 bg-white/5 p-3 sm:p-4"
+                          key={item.desktopLabel}
+                          className="flex min-h-[96px] flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-2 py-3 sm:min-h-[112px] sm:p-4"
                         >
-                          <div className="text-sm font-bold sm:text-lg" style={{ color: ACCENT }}>
+                          <div
+                            className="text-sm font-bold sm:text-lg"
+                            style={{ color: ACCENT }}
+                          >
                             {item.value}
                           </div>
-                          <div className="mt-1 text-[11px] text-white/60 sm:text-xs">
-                            {item.label}
+
+                          <div className="mt-1 text-[11px] leading-tight text-white/60 sm:text-xs">
+                            <span className="block sm:hidden whitespace-nowrap">
+                              {item.mobileLabel}
+                            </span>
+                            <span className="hidden sm:block leading-tight">
+                              {item.desktopLabel}
+                            </span>
                           </div>
                         </div>
                       ))}
@@ -1664,7 +1685,7 @@ export default function QuranTranslationLandingPage() {
                       >
                         <div className="flex items-center justify-between gap-3">
                           <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-[#7a0f0f]/18 text-[#C89B3C]">
-                            <GooglePlayIcon style={{ color: ACCENT }} />
+                            <GooglePlayIcon />
                           </div>
                           <span className="whitespace-nowrap text-sm font-bold text-white sm:text-base">
                             Google Play
@@ -1680,7 +1701,7 @@ export default function QuranTranslationLandingPage() {
                       >
                         <div className="flex items-center justify-between gap-3">
                           <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-[#d4af37]/12 text-[#C89B3C]">
-                            <AppStoreIcon style={{ color: ACCENT }} />
+                            <AppStoreIcon />
                           </div>
                           <span className="text-sm font-bold text-white sm:text-base">
                             App Store
