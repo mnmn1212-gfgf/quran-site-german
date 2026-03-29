@@ -259,16 +259,16 @@ function AppStoreIcon() {
       className="h-5 w-5"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.8"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
-      <path d="M9.5 15.8h5" />
-      <path d="M10.2 8.5 14 15.8" />
-      <path d="M13.8 8.5 10 15.8" />
-      <path d="M11.2 12h1.6" />
+      <rect x="4" y="4" width="16" height="16" rx="4" />
+      <path d="M9 15.5 14.5 8" />
+      <path d="M11 8h4" />
+      <path d="M9.5 15.5H15" />
+      <path d="M10.5 12h5" />
     </svg>
   );
 }
@@ -280,14 +280,15 @@ function GooglePlayIcon() {
       className="h-5 w-5"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth="1.6"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <path d="M6 4.8 18 12 6 19.2V4.8Z" />
-      <path d="M9 7.5 14.5 12 9 16.5" />
-      <path d="M10.5 12H16" />
+      <path d="M5 4.5v15l8.8-7.5L5 4.5Z" />
+      <path d="m13.8 12 3.6-3 1.6 1.1c1.2.8 1.2 2.1 0 2.9L17.4 14l-3.6-2Z" />
+      <path d="m17.4 9-8.2-3.6" />
+      <path d="m17.4 15-8.2 3.6" />
     </svg>
   );
 }
@@ -1680,19 +1681,15 @@ export default function QuranTranslationLandingPage() {
                         href="https://play.google.com/store/apps/details?id=com.sana_all&pcampaignid=web_share"
                         target="_blank"
                         rel="noreferrer"
-                        className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-[#111]/80 px-5 py-4 transition hover:bg-white/10"
+                        className="group rounded-[1.3rem] border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:bg-white/10"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#C89B3C]/10 text-[#C89B3C]">
-                          <GooglePlayIcon />
-                        </div>
-
-                        <div className="text-left">
-                          <div className="text-[11px] text-white/60">
-                            Get it on
+                        <div className="flex items-center justify-between gap-3">
+                          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-[#7a0f0f]/18 text-[#C89B3C]">
+                            <GooglePlayIcon />
                           </div>
-                          <div className="text-sm font-bold text-white">
+                          <span className="whitespace-nowrap text-sm font-bold text-white sm:text-base">
                             Google Play
-                          </div>
+                          </span>
                         </div>
                       </a>
 
@@ -1700,19 +1697,15 @@ export default function QuranTranslationLandingPage() {
                         href="https://apps.apple.com/us/app/sana-tv-%D8%B3%D9%86%D8%A7/id6742054715"
                         target="_blank"
                         rel="noreferrer"
-                        className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-[#111]/80 px-5 py-4 transition hover:bg-white/10"
+                        className="group rounded-[1.3rem] border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:bg-white/10"
                       >
-                        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#C89B3C]/10 text-[#C89B3C]">
-                          <AppStoreIcon />
-                        </div>
-
-                        <div className="text-left">
-                          <div className="text-[11px] text-white/60">
-                            Download on the
+                        <div className="flex items-center justify-between gap-3">
+                          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-[#d4af37]/12 text-[#C89B3C]">
+                            <AppStoreIcon />
                           </div>
-                          <div className="text-sm font-bold text-white">
+                          <span className="text-sm font-bold text-white sm:text-base">
                             App Store
-                          </div>
+                          </span>
                         </div>
                       </a>
                     </div>
